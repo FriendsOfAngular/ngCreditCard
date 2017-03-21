@@ -1,0 +1,28 @@
+{
+  "name": "ngcreditcard",
+  "version": "0.0.1",
+  "description": "A simple directive to validate credit card",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FriendsOfAngular/ngCreditCard.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "directives",
+    "credit-card"
+  ],
+  "author": "FriendsOfAngular",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FriendsOfAngular/ngCreditCard/issues"
+  },
+  "homepage": "https://github.com/FriendsOfAngular/ngCreditCard#readme",
+  "dependencies": {
+    "creditcards": "^2.1.2"
+  }
+}

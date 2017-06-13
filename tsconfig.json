@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017", "dom"],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "files": [
+    "src/ngCreditCard.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot"
+  }
+}

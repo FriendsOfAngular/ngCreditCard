@@ -9,10 +9,10 @@ import * as cc from 'creditcards';
   ]
 })
 export class CreditCardValidator implements Validator {
-     private validator: Function;
-
-    constructor(@Attribute('validateCreditCard') public validateCreditCard: string) {
-        console.log('cc validator start');
+    private validator: Function;
+    @Attribute('validateCreditCard') validateCreditCard: string;
+    
+    constructor() {
         this.validator = this.validateCreditCardFactory();
     }
 
@@ -31,4 +31,3 @@ export class CreditCardValidator implements Validator {
         }
     }
 }
-

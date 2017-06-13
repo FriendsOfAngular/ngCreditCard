@@ -2,9 +2,11 @@
   "name": "ngcreditcard",
   "version": "0.0.1",
   "description": "A simple directive to validate credit card",
-  "main": "index.js",
+  "main": "./dist/ngCreditCard.js",
+  "typings": "./dist/ngCreditCard.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/ngc -p tsconfig.json && rm -rf aot"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,19 @@
   "homepage": "https://github.com/FriendsOfAngular/ngCreditCard#readme",
   "dependencies": {
     "creditcards": "^2.1.2"
+  },
+  "devDependencies": {
+    "@angular/common": "^4.2.2",
+    "@angular/compiler": "^4.2.2",
+    "@angular/compiler-cli": "^4.2.2",
+    "@angular/core": "^4.2.2",
+    "@angular/forms": "^4.2.2",
+    "@angular/platform-browser": "^4.2.2",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.4.0",
+    "ts-node": "^3.0.6",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4",
+    "zone.js": "^0.8.12"
   }
 }

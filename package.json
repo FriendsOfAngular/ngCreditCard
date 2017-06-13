@@ -1,6 +1,6 @@
 {
   "name": "ngcreditcard",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple directive to validate credit card",
   "main": "./dist/ngCreditCard.js",
   "typings": "./dist/ngCreditCard.d.ts",

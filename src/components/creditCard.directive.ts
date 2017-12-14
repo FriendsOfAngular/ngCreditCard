@@ -22,8 +22,8 @@ export class CreditCardValidator implements Validator {
 
     private validateCreditCardFactory() {
         return (c: AbstractControl) => {
-
-            return cc.card.isValid(c.value) ? null : {
+            const value = cc.card.parse(c.value);
+            return cc.card.isValid(value) ? null : {
                 validateCreditCard: {
                     valid: false
                 }
